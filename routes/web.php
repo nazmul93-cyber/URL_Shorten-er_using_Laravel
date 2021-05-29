@@ -32,3 +32,4 @@ Route::get('/calculator', function(){
 Route::post('calcon',[CalController::class,'mathOp']);
 
 
+
