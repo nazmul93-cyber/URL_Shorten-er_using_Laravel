@@ -33,6 +33,7 @@
         <h3 style="color:#34495e;">Result : {{session('final')}}</h3>
     @endif
   
+  
 
 </body>
 </html>
