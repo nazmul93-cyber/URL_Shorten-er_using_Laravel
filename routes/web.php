@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalController;
+use App\Http\Controllers\UrlController;
 
 
 /*
@@ -31,5 +32,16 @@ Route::get('/calculator', function(){
 
 Route::post('calcon',[CalController::class,'mathOp']);
 
+
+
+// for the url shortener
+
+Route::get('/short', function() {
+
+    return view('url.short');
+});
+
+Route::post('/short',[UrlController::class,'short']);
+Route::get('/short/{link}',[UrlController::class,'shortlink']);
 
 
